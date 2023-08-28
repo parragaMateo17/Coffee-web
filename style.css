@@ -1,0 +1,137 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+ /* font-family: 'Nunito', sans-serif;*/
+
+
+:root{
+    --color-white: white;
+    --color-clear-brown: #9f8063;
+    --color-dark-brown: #6f5446;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient(
+        rgba(29, 30, 35, 0.8),
+        rgba(29, 30, 35, 0.8)
+    ),url(images/bg.jpg);
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.logo{
+    color: var(--color-white);
+    font-size: 25px;
+    font-weight: 800;
+}
+.logo:hover{
+    color: var(--color-clear-brown);
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: var(--color-white);
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: var(--color-clear-brown);
+}
+#menu{
+    display: none;
+}
+
+.menu-icon{
+    width: 25px;
+    
+}
+
+.menu label{
+cursor: pointer;
+display: none;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.header-content{
+    text-align: center;
+}
+.header-content p{
+    font-size: 16px;
+    color: var(--color-white);
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: var(--color-clear-brown);
+    color: var(--color-white);
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.btn-1:hover{
+    background-color: var(--color-dark-brown);
+}
+
+.coffee{
+    padding: 100px 0;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.coffee-content{
+    text-align: center;
+}
+
+.coffee-content h2{
+    font-size: 55px;
+    line-height: 70px;
+}
